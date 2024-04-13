@@ -1,0 +1,56 @@
+@import 'header';
+@import 'parallax';
+@import 'info';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 30px 20px;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .homeBtn,
+  .btnNav {
+    margin: 0 5px;
+  }
+  #text {
+    font-size: 3em;
+  }
+  .parallax {
+    height: 50vh;
+  }
+}
+
+/* Media query para dispositivos con una pantalla de hasta 1240px de ancho */
+@media screen and (max-width: 1240px) {
+  .logo {
+    margin-right: 0;
+  }
+  #text {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1480px) {
+  header {
+    padding: 30px 50px;
+  }
+  .logo {
+    font-size: 1.8em;
+  }
+  .homeBtn,
+  .btnNav {
+    margin: 0 8px;
+  }
+}
